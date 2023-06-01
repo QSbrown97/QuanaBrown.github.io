@@ -10,42 +10,44 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-container">
-      <a href="#" class="logo">&#127803;</a>
+  <header id="header">
+    <h1>Quana &#127803; Brown</h1>
+    <div class="nav-links">
+      <span class="linkedIn-icon icon"><a href="https://www.linkedin.com/in/quanabrown/" target="_blank">
+          <img src="images/icons8-linkedin-30 -white.png" alt="LinkedIn Icon"></a>
+      </span>
+      <span class="github-icon icon"><a href="https://github.com/QSbrown97" target="_blank">
+          <img src="images/icons8-github-30 -white.png" alt="Github Icon"></a>
+      </span>
+      <span class="email-icon icon"><a href="mailto:qsbrown97@gmail.com">
+          <img src="images/icons8-email-30 -white.png" alt="Email Icon"></a>
+      </span>
+    </div>
+    <div class="header-content">
+      <!-- <a href="#" class="logo">&#127803;</a> -->
       <label for="hamburger" class="hamburger"><span></span></label>
       <input type="checkbox" id="hamburger">
       <nav>
-        <ul class="menus">
-          <li><a href="#">Home</a></li>
-          <li style="--delay: 2" tabindex="0">
-          <button>
-            <span>Sections</span>
-            <span class="arrow"></span>
-          </button>
-          <ul class="dropdown">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
+        <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+          <li class="menu-item" style="--delay: 2" tabindex="0">
+            <button>
+              <span>Sections</span>
+              <span class="arrow"></span>
+            </button>
+            <ul class="menu dropdown ">
+              <li class="menu-item"><a class="menu-link" href="#about-me">About Me</a></li>
+              <li class="menu-item"><a class="menu-link" href="#projects">Projects</a></li>
+            </ul>
           </li>
-          <li style="--delay: 3;">
-            <a href="https://docs.google.com/document/d/1srACFzWveL23n549zJzbnkD8ofRQm9zB/edit?usp=sharing&ouid=108112519839161076230&rtpof=true&sd=true"
-            target="_blank">Resume</a></li>
+          <li class="menu-item" style="--delay: 3;">
+            <a class="menu-link"
+              href="https://docs.google.com/document/d/1srACFzWveL23n549zJzbnkD8ofRQm9zB/edit?usp=sharing&ouid=108112519839161076230&rtpof=true&sd=true"
+              target="_blank">Resume</a>
+          </li>
         </ul>
-        <div class="nav-links">
-          <span class="linkedIn-icon"><a href="https://www.linkedin.com/in/quanabrown/" target="_blank">
-              <img src="images/icons8-linkedin-30.png" alt="LinkedIn Icon"></a>
-          </span>
-          <span class="github-icon"><a href="https://github.com/QSbrown97" target="_blank">
-              <img src="images/icons8-github-30.png" alt="Github Icon"></a>
-          </span>
-          <span id="email-icon"><a href="mailto:qsbrown97@gmail.com">
-              <img src="images/icons8-email-30.png" alt="Email Icon"></a>
-          </span>
-        </div>
       </nav>
     </div>
-    <h1>Quana Brown</h1>
   </header>
 
   <main>
@@ -58,9 +60,7 @@
           in Front End Web Development with strategic direction, project management, and
           critical thinking skills to construct products that are efficient and useful to
           meet desired expectations and needs.</p>
-        <img id="contact-photo" 
-        src="/QuanaBrown.github.io/images/ContactPhoto.jpg" 
-        alt="A photo of a woman smiling">
+        <img id="contact-photo" src="/QuanaBrown.github.io/images/ContactPhoto.jpg" alt="A photo of a woman smiling">
         <h3>Technical Skills</h3>
         <ul class="tech-skills">
           <li class="skill-item1">
@@ -137,13 +137,13 @@
         </form>
       </div>
       <div class="links">
-        <span class="linkedIn-icon"><a href="https://www.linkedin.com/in/quanabrown/" target="_blank">
+        <span class="linkedIn-icon icon"><a href="https://www.linkedin.com/in/quanabrown/" target="_blank">
             <img src="images/icons8-linkedin-30.png" alt="LinkedIn Icon"></a>
         </span>
-        <span class="github-icon"><a href="https://github.com/QSbrown97" target="_blank">
+        <span class="github-icon icon"><a href="https://github.com/QSbrown97" target="_blank">
             <img src="images/icons8-github-30.png" alt="Github Icon"></a>
         </span>
-        <span id="email-icon"><a href="mailto:qsbrown97@gmail.com">
+        <span class="email-icon icon"><a href="mailto:qsbrown97@gmail.com">
             <img src="images/icons8-email-30.png" alt="Email Icon"></a>
         </span>
       </div>
@@ -156,13 +156,12 @@
       <article class="project-item project-item1">
         <div class="project-container">
           <h4 class="project-title">
-            <a href="https://qsbrown97.github.io/purple-power/" 
-            target="_blank">Title: Purple Passion</a>
+            <a href="https://qsbrown97.github.io/purple-power/" target="_blank">Title: Purple Passion</a>
           </h4>
           <img class="project-image" src="images/purplePassionCapture.PNG" alt="Thumbnail for Purple Passion project">
           <p class="project-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum accusantium
-            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta 
+            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta
             deserunt iure aliquid blanditiis nisi hic unde laboriosam!
           </p>
           <h5>Tech Stack | HTML, CSS</h5>
@@ -174,10 +173,10 @@
           <h4 class="project-title">
             <a href="https://github.com/QSbrown97" target="_blank">Title: Sample Project 01</a>
           </h4>
-          <img class="project-image"  src="images/sampleCapture.PNG" alt="">
+          <img class="project-image" src="images/sampleCapture.PNG" alt="">
           <p class="project-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum accusantium
-            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta 
+            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta
             deserunt iure aliquid blanditiis nisi hic unde laboriosam!
           </p>
           <h5>Tech Stack | Lorem ipsum</h5>
@@ -189,10 +188,10 @@
           <h4 class="project-title">
             <a href="https://github.com/QSbrown97" target="_blank">Title: Sample Project 02</a>
           </h4>
-          <img class="project-image"  src="images/sampleCapture.PNG" alt="">
+          <img class="project-image" src="images/sampleCapture.PNG" alt="">
           <p class="project-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum accusantium
-            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta 
+            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta
             deserunt iure aliquid blanditiis nisi hic unde laboriosam!
           </p>
           <h5>Tech Stack | Lorem ipsum</h5>
