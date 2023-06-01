@@ -9,7 +9,7 @@ body {
   background-color: rgb(23,21,6);
   color: whitesmoke;
   display: grid;
-  grid-template-columns: .5fr 1fr .55fr;
+  grid-template-columns: .5fr 1fr .5fr;
   grid-template-rows: 70px 1fr 30px;
   grid-template-areas:
   "header header header"
