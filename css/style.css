@@ -4,8 +4,16 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: customfont;
+  src: url(/QuanaBrown.github.io/font/FreightNeoPro.tff/FreightNeo\ W03\ Light.ttf);
+  /* <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> */
+}
+
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-family: customfont;
   background-color: rgb(23,21,6);
   color: whitesmoke;
   display: grid;
@@ -20,7 +28,7 @@ body {
 
 #header {
   display: grid;
-  grid-template-columns: .15fr 1fr .5fr;
+  grid-template-columns: .45fr 1fr .45fr;
   grid-template-rows: 70px;
   grid-template-areas:
   "header-content h1 links "
@@ -53,6 +61,8 @@ h1 {
   text-align: center;
   max-width: fit-content;
   margin: auto;
+  font-weight: bolder;
+  font-size: 45px;
 }
 
 
@@ -62,7 +72,7 @@ h1 {
 }
 
 .icon {
-  margin: 0 5px;
+  margin: 0 2.5px;
 }
 
 #hamburger {
@@ -184,24 +194,165 @@ main {
   
   
 }
+h2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  background-color: rgb(219, 203, 180);
+  color: rgba(23, 21, 6, 0.815);
+  width:fit-content;
+  height: 30px;
+  line-height: 1.1;
+  border-radius: 5px;
+  
+}
+
+p {
+  text-indent: 20px;
+}
+
+.skills-container {
+  background-color: rgb(197, 129, 33);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0px 100px 10px 0px;
+  padding: 10px 0px;
+  
+  
+}
+
+h3 {
+  border: solid 3px rgb(197, 129, 33);
+  width: 150px;
+  text-align: center;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+}
+
+.tech-skills {
+  text-align: center;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  color: #ffffffc1;
+
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  gap: 20px
+}
 
 #contact-photo {
-  max-width: 300px;
+
+  width: 400px;
+  height: 400px;
   margin: auto;
+  border-radius: 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 50px;
+  color: rgb(252, 251, 253);
+  font-weight: 500;
+  border-radius: 10px;
+  border: solid;
+  width: fit-content;
+  height: 400px;
+  margin: 50px 25px;
+  
+}
+
+.form-legend {
+  background-color: rgb(219, 203, 180);
+  color:rgba(23, 21, 6);
+  padding: 5px 10px;
+  font-size: x-large;
+  border-radius: 5px;
+  width: 375px;
+  height: 50px;
+}
+
+.form-item {
+  font-family: customfont;
+  text-indent: 10px;
+  margin:0 50px 0 0;
 }
 
 
 #form-submit {
   color: rgba(23,21,6);
   background-color: rgb(197, 129, 33);
+  align-items: center;
+  width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+}
+
+
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex:0 0 50%;
+  text-align: center;
+  line-height: 1.5;
+  margin: 30px auto;
+  height: 40px;
+
+}
+
+article {
+  margin: auto;
+}
+
+.project-item {
+  
+  background-color: #ffffff1b;
+  border-radius: 10px;
+  max-width: 550px;
+  padding: auto;
+  flex-grow: 1;
+  margin-top: 25px;
+  padding: 10px 10px;
 }
 
 .project-image {
+  margin: 10px 17px;
   max-width: 500px
+}
+a {
+  color: #fff;
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+.footer-icon {
+  margin: 10px 15px 10px 15px;
+  
 }
 
 footer {
   grid-area: footer;
+  text-align: center;
+  height: 100px;
+  line-height: 1;
+  color: #ffffff57;
+  margin-top: 40px;
 }
 
 
