@@ -1,225 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Quana Brown's Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header id="header">
-    <h1>Quana &#127803; Brown</h1>
-    <div class="nav-links">
-      <span class="linkedIn-icon icon"><a href="https://www.linkedin.com/in/quanabrown/" target="_blank">
-          <img src="images/icons8-linkedin-30 -white.png" alt="LinkedIn Icon"></a>
-      </span>
-      <span class="github-icon icon"><a href="https://github.com/QSbrown97" target="_blank">
-          <img src="images/icons8-github-30 -white.png" alt="Github Icon"></a>
-      </span>
-      <span class="email-icon icon"><a href="mailto:qsbrown97@gmail.com">
-          <img src="images/icons8-email-30 -white.png" alt="Email Icon"></a>
-      </span>
-    </div>
-    <div class="header-content">
-      <!-- <a href="#" class="logo">&#127803;</a> -->
-      <label for="hamburger" class="hamburger"><span></span></label>
-      <input style="font-size: 16px
-      ;" type="checkbox" id="hamburger">
-      <nav>
-        <ul class="menu">
-          <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
-          <li class="menu-item" style="--delay: 2" tabindex="0">
-            <button>
-              <span>Sections</span>
-              <span class="arrow"></span>
-            </button>
-            <ul class="menu dropdown ">
-              <li class="menu-item"><a class="menu-link" href="#about-me">About Me</a></li>
-              <li class="menu-item"><a class="menu-link" href="#projects">Projects</a></li>
-            </ul>
-          </li>
-          <li class="menu-item" style="--delay: 3;">
-            <a class="menu-link"
-              href="https://docs.google.com/document/d/1srACFzWveL23n549zJzbnkD8ofRQm9zB/edit?usp=sharing&ouid=108112519839161076230&rtpof=true&sd=true"
-              target="_blank">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <div class="image">
+    <img class="imgSunflower" src="/images/Sunflower01.jpg" alt="">
+  </div>
+  <div class="container">
+  <header>
+    <h1>Quana Brown</h1>
   </header>
-
   <main>
+    <p>Software Engineer</p>
 
-    <section id="about-me">
-      <div class="about-me-container">
-        <h2>About Me</h2>
-        <p>Ambitious professional, highly experienced in team building and goal oriented
-          environments with a strong creative background. Excited to apply recent studies
-          in Software Development with strategic direction, project management, and
-          critical thinking skills to construct products that are efficient and useful to
-          meet desired expectations and needs.</p>
-        </div>
-        <div class="form-container">
-          <img id="contact-photo" src="/QuanaBrown.github.io/images/ContactPhoto.jpg" alt="A photo of a woman smiling">
-          <form action="https://formsubmit.co/ac7e12fde751d89657590307933fe5f1" method="POST">
-            <fieldset class="contact-form">
-              <legend class="form-legend">Leave a message & Lets connect! &#128522;</legend>
-              <label for="name">Name*</label>
-              <input class="form-item" type="text" id="name" name="name" placeholder="Your Name..." required>
-              
-              <label for="email">Email*</label>
-              <input class="form-item" type="email" name="email" id="email" placeholder="Your Email Address..." required>
-              
-              <label for="message">Message*</label>
-              <textarea class="form-item" name="message" id="message" cols="30" rows="5" placeholder="Your Message..." required></textarea>
-              
-              <button id="form-submit" type="submit">Submit</button>
-            </fieldset>
-          </form>
-        </div>
-        <!-- Resume link: https://docs.google.com/document/d/1srACFzWveL23n549zJzbnkD8ofRQm9zB/edit?usp=sharing&ouid=108112519839161076230&rtpof=true&sd=true -->
-      </section>
+    <a class="enter"  href="/html/projects.html">Enter</a>
 
-      <h3>Technical Skills</h3>
-      <div class="skills-container">
-        <ul class="tech-skills">
-          <li class="skill-item1">
-            HTML/CSS
-          </li>
-          <li class="skill-item2">
-            GIT
-          </li>
-          <li class="skill-item3">
-            JavaScript
-          </li>
-          <li class="skill-item4">
-            Java
-          </li>
-          <li class="skill-item5">
-            Github
-          </li>
-          <li class="skill-item6">
-            Visual Studio Code(VSC)
-          </li>
-          <li class="skill-item7">
-            Time Management
-          </li>
-          <li class="skill-item8">
-            Troubleshooting
-          </li>
-          <li class="skill-item9">
-            Multi-tasking
-          </li>
-          <li class="skill-item10">
-            Critical Thinking
-          </li>
-          <li class="skill-item11">
-            Office 365
-          </li>
-          <li class="skill-item12">
-            Project Management
-          </li>
-          <li class="skill-item13">
-            Photoshop
-          </li>
-          <li class="skill-item14">
-            Problem Solving
-          </li>
-          <li class="skill-item15">
-            Debugging
-          </li>
-          <li class="skill-item16">
-            Detail Oriented
-          </li>
-          <li class="skill-item17">
-            Team Building
-          </li>
-          <li class="skill-item18">
-            Documentation
-          </li>
-        </ul>
-      </div>
-    
-    <section id="projects">
-      <h2 class="project">Projects</h2>
-      
-      <article class="project-item project-item1">
-        <div class="project-container">
-          <h4 class="project-title">
-            <a href="https://qsbrown97.github.io/purple-power/" target="_blank">Title: Purple Passion</a>
-          </h4>
-          <img class="project-image" src="images/purplePassionCapture.PNG" alt="Thumbnail for Purple Passion project">
-          <p class="project-description">
-            Description: <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum accusantium
-            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta
-            deserunt iure aliquid blanditiis nisi hic unde laboriosam!
-          </p>
-          <h5>Tech Stack | HTML, CSS</h5>
-        </div>
-      </article>
-      
-      <article class="project-item project-item2">
-        <div class="project-container">
-          <h4 class="project-title">
-            <a href="https://github.com/QSbrown97" target="_blank">Title: Sample Project 01</a>
-          </h4>
-          <img class="project-image" src="images/sampleCapture.PNG" alt="">
-          <p class="project-description">
-            Description: <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum accusantium
-            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta
-            deserunt iure aliquid blanditiis nisi hic unde laboriosam!
-          </p>
-          <h5>Tech Stack | Lorem ipsum</h5>
-        </div>
-      </article>
-      
-      <article class="project-item project-item3">
-        <div class="project-container">
-          <h4 class="project-title">
-            <a href="https://github.com/QSbrown97" target="_blank">Title: Sample Project 02</a>
-          </h4>
-          <img class="project-image" src="images/sampleCapture.PNG" alt="">
-          <p class="project-description">
-            Description: <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum accusantium
-            ipsam soluta numquam iste! Maxime, facilis ducimus error amet corporis dicta
-            deserunt iure aliquid blanditiis nisi hic unde laboriosam!
-          </p>
-          <h5>Tech Stack | Lorem ipsum</h5>
-        </div>
-      </article>
-    </section>
-    
-  </main>
-  
-  <footer id="footer">
     <div class="links">
       <span class="linkedIn-icon footer-icon"><a href="https://www.linkedin.com/in/quanabrown/" target="_blank">
-          <img src="images/icons8-linkedin-30.png" alt="LinkedIn Icon"></a>
+          <img class="icon-image" src="/images/icons8-linkedin-30 -white.png" alt="LinkedIn Icon"></a>
       </span>
       <span class="github-icon footer-icon"><a href="https://github.com/QSbrown97" target="_blank">
-          <img src="images/icons8-github-30.png" alt="Github Icon"></a>
+          <img class="icon-image" src="/images/icons8-github-30 -white.png" alt="Github Icon"></a>
       </span>
       <span class="email-icon footer-icon"><a href="mailto:qsbrown97@gmail.com">
-          <img src="images/icons8-email-30.png" alt="Email Icon"></a>
+          <img class="icon-image" src="/images/icons8-email-30 -white.png" alt="Email Icon"></a>
       </span>
     </div>
-    <h4>&copy;2023 created by Quana Brown</h4>
-  </footer>
+    <a target="_blank" href="https://icons8.com/icon/62856/github" hidden>All icons by</a><a target="_blank" href="https://icons8.com" hidden>Icons8</a>
 
+  </main>
+  <footer></footer>
+</div>
 </body>
-
 </html>
-
-<!-- 
-  1.Make about me and picture grid
-  2. Make technical skill flex 
-  3. Format and style form
-  4. Style project containers
-  5. Center footer
--->

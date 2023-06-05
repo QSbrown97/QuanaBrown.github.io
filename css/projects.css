@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: customfont;
-  src: url(/QuanaBrown.github.io/font/FreightNeoPro.tff/FreightNeo\ W03\ Light.ttf);
+  src: url(/font/FreightNeoPro.tff/FreightNeo\ W03\ Light.ttf);
   /* <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> */
 }
 
@@ -36,7 +36,7 @@ body {
   grid-area: header;
   position: relative;
   background-color: antiquewhite;
-  background-image: url("/QuanaBrown.github.io/images/Sunflower02.jpg");
+  background-image: url("/images/Sunflower02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 46.75%;
@@ -50,11 +50,11 @@ body {
   padding: 10px 20px;
 }
 
-.logo {
+/* .logo {
   font-size: 30px;
   text-decoration: none;
   color: inherit;
-}
+} */
 
 h1 {
   grid-area: h1;
@@ -72,7 +72,7 @@ h1 {
 }
 
 .icon {
-  margin: 0 2.5px;
+  margin: 5px 15px;
 }
 
 #hamburger {
@@ -154,21 +154,23 @@ ul li a, ul li button {
 
 .menu {
   position: absolute;
-  top: 3.2rem;
+  top: 3.5rem;
   left: 0;
   right: 0;
   background:rgb(197, 129, 33);
+  border-radius: 5px;
   visibility: hidden;
   transform: translateY(-1em);
   transition: transform ease 0.5s;
-  width: 150px;
+  width: 200px;
+  padding-left: 10px;
 }
 
 .dropdown {
   padding: 2px 1.5rem;
   height: 0;
   overflow: hidden;
-  transition: height ease 0.2s;
+  transition: height ease 0.5s;
 }
 
 button {
@@ -186,7 +188,7 @@ button {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 6px solid #fff;
-  transition: transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.5s;
 }
 
 main {
@@ -197,7 +199,7 @@ main {
 h2 {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top:20px;
+  margin-top:40px;
   margin-bottom: 10px;
   background-color: rgb(219, 203, 180);
   color: rgba(23, 21, 6, 0.815);
@@ -208,7 +210,7 @@ h2 {
   
 }
 
-p {
+.project-description {
   text-indent: 20px;
 }
 
@@ -216,7 +218,7 @@ p {
   background-color: rgb(197, 129, 33);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin: 0px 100px 10px 0px;
+  margin: 0px 0px 10px 0px;
   padding: 10px 0px;
   
   
@@ -228,6 +230,7 @@ h3 {
   text-align: center;
   border-bottom: none;
   border-top-left-radius: 5px;
+  margin-top: 40px;
 }
 
 .tech-skills {
@@ -239,71 +242,16 @@ h3 {
 
 }
 
-.form-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  gap: 20px
-}
-
-#contact-photo {
-
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  border-radius: 5px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px 50px;
-  color: rgb(252, 251, 253);
-  font-weight: 500;
-  border-radius: 10px;
-  border: solid;
-  width: fit-content;
-  height: 400px;
-  margin: 50px 25px;
-  
-}
-
-.form-legend {
-  background-color: rgb(219, 203, 180);
-  color:rgba(23, 21, 6);
-  padding: 5px 10px;
-  font-size: x-large;
-  border-radius: 5px;
-  width: 375px;
-  height: 50px;
-}
-
-.form-item {
-  font-family: customfont;
-  text-indent: 10px;
-  margin:0 50px 0 0;
-}
-
-
-#form-submit {
-  color: rgba(23,21,6);
-  background-color: rgb(197, 129, 33);
-  width: 75px;
-  height: 25px;
-  border-radius: 5px;
-  border: none;
-  margin: 10px;
-  padding-left: 12px;
-
-}
-
 
 
 #projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+#projects>* {
+  flex: 1 1;
 }
 
 .project {
@@ -323,19 +271,18 @@ article {
   
   background-color: #ffffff1b;
   border-radius: 10px;
-  max-width: 550px;
-  padding: auto;
-  flex-grow: 1;
-  margin-top: 25px;
+  max-width: 300px;
+  margin-bottom: 20px;
   padding: 10px 10px;
 }
 
 .project-image {
   margin: 10px 17px;
-  max-width: 500px
+  max-width: 250px
 }
 a {
   color: #fff;
+  text-decoration: none;
 }
 
 h5 {
@@ -343,7 +290,7 @@ h5 {
 }
 
 .footer-icon {
-  margin: 10px 15px 10px 15px;
+  margin: 10px 15px 
   
 }
 
@@ -356,6 +303,68 @@ footer {
   margin-top: 40px;
 }
 
+
+@media screen and (max-width: 960px) {
+  
+  
+  body {
+    
+    margin: 0;
+    display: block;
+  }
+  
+  .nav-links {
+    width:100%;
+  }
+  .icon {
+    margin: 7px 10px;
+  }
+  
+  .nav-icon {
+    max-width: 25px;
+  }
+  
+  
+  
+  h1 {
+    font-size: 180%;
+    height: 100%;
+    line-height: 3;
+  }
+  
+  .skills-container {
+    margin:  0 40px;
+  }
+
+  #projects {
+    display: block;
+    max-width: 100%;
+    margin: 20px 10px ;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+  
+  h2 {
+    margin-left: 100px;
+    margin-right: 0;
+  }
+  
+  h3{
+    margin-left: 40px;
+  }
+  
+  
+  
+}
+
+@media screen and (max-width: 600px) {
+  .email-icon {
+    margin-left: 57px;
+  }
+
+}
 
 
 

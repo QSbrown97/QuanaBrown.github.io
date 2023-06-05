@@ -1,0 +1,167 @@
+.body {
+  height: 100%;
+  
+}
+
+.about-description {
+  text-indent: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  gap: 20px;
+  width: 100%;
+  width: calc(100% - 1rem);
+}
+
+#contact-photo {
+
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 10px 10px  rgb(197, 129, 33);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 50px;
+  color: rgb(252, 251, 253);
+  font-weight: 500;
+  border-radius: 10px;
+  border: solid;
+  width: calc(100% - 1rem);
+  height: 400px;
+  margin: 50px 25px;
+  
+}
+
+.form-legend {
+  background-color: rgb(219, 203, 180);
+  color:rgba(23, 21, 6);
+  padding: 5px 10px;
+  font-size: x-large;
+  border-radius: 5px;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+}
+
+.form-item {
+  font-family: customfont;
+  text-indent: 10px;
+  margin:0 50px 0 0;
+}
+
+
+
+
+#form-submit {
+  color: rgba(23,21,6);
+  background-color: rgb(197, 129, 33);
+  width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  padding-left: 12px;
+
+}
+
+
+#foot {
+  grid-area: footer;
+  text-align: center;
+  color: #ffffff57;
+  margin-top: 150px;
+  
+} 
+
+
+
+@media screen and (max-width: 960px) {
+
+
+  body {
+    
+    margin: 0;
+    display: block;
+  }
+
+
+
+  h2 {
+    margin-left: 50px;
+  }
+
+  .about-description {
+    width: 70%;
+    margin: auto;
+  }
+  .form-container {
+    
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-photo {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .contact-form {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-legend {
+    background-color: rgb(219, 203, 180);
+    color:rgba(23, 21, 6);
+    padding: 5px 10px;
+    font-size: x-large;
+    border-radius: 5px;
+    width: 80%;
+    height: 75px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  fieldset {
+    margin: 0;
+  }
+
+  label {
+    margin-left: 10px;
+  }
+  
+  .form-item {
+    font-family: customfont;
+    text-indent: 10px;
+    margin:20px;
+  }
+
+  #form-submit {
+    color: rgba(23,21,6);
+    background-color: rgb(197, 129, 33);
+    width: 75px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    padding-left: 12px;
+  
+  }
+}
+
