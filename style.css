@@ -104,7 +104,9 @@ main {
 .icon-image {
   width: 20px;
   height: 20px;
+
 }
+
 
 @media screen and (max-width: 960px) {
   *{

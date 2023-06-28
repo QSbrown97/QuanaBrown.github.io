@@ -1,14 +1,14 @@
+@font-face {
+  font-family: customfont;
+  src: url(font/FreightNeoPro.tff/FreightNeo\ W03\ Light.ttf);
+  /* <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> */
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-@font-face {
-  font-family: customfont;
-  src: url(font/FreightNeoPro.tff/FreightNeo\ W03\ Light.ttf);
-  /* <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> */
-}
 
 
 body {
@@ -36,7 +36,7 @@ body {
   grid-area: header;
   position: relative;
   background-color: antiquewhite;
-  background-image: url("images/Sunflower02.jpg");
+  background-image: url("./images/Sunflower02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 46.75%;
@@ -362,6 +362,12 @@ footer {
 @media screen and (max-width: 600px) {
   .email-icon {
     margin-left: 57px;
+  }
+
+  h1 {
+    font-size: 140%;
+    height: 100%;
+    line-height: 3;
   }
 
 }
