@@ -210,14 +210,12 @@ h2 {
   
 }
 
-.project-description {
-  text-indent: 20px;
-}
 
 .skills-container {
   background-color: rgb(197, 129, 33);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   margin: 0px 0px 10px 0px;
   padding: 10px 0px;
   
@@ -230,7 +228,13 @@ h3 {
   text-align: center;
   border-bottom: none;
   border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-top: 40px;
+}
+
+h4{
+  text-align: center;
+  margin: auto;
 }
 
 .tech-skills {
@@ -248,14 +252,10 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-#projects>* {
-  flex: 1 1;
+  justify-content: center;
 }
 
 .project {
-  flex:0 0 50%;
   text-align: center;
   line-height: 1.5;
   margin: 30px auto;
@@ -271,15 +271,17 @@ article {
   
   background-color: #ffffff1b;
   border-radius: 10px;
-  max-width: 300px;
-  margin-bottom: 20px;
+  max-width: 400px;
+  margin:0 10px 20px 10px;
   padding: 10px 10px;
 }
 
 .project-image {
   margin: 10px 17px;
-  max-width: 250px
+  max-width: 350px;
+  border-radius: 5px;
 }
+
 a {
   color: #fff;
   text-decoration: none;
@@ -294,7 +296,7 @@ h5 {
   
 }
 
-footer {
+#footer {
   grid-area: footer;
   text-align: center;
   height: 100px;
@@ -304,7 +306,7 @@ footer {
 }
 
 
-@media screen and (max-width: 960px) {
+@media (max-width: 1920px) {
   
   
   body {
@@ -327,19 +329,31 @@ footer {
   
   
   h1 {
-    font-size: 180%;
+    font-size: 250%;
     height: 100%;
-    line-height: 3;
+    line-height: 1.5;
   }
   
   .skills-container {
-    margin:  0 40px;
+    background-color: rgb(197, 129, 33);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0px 18% 10px 18%;
+    padding: 10px 0px;
+    
+    
+  }
+  
+  article {
+    margin: auto;
   }
 
   #projects {
-    display: block;
-    max-width: 100%;
-    margin: 20px 10px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .project-image {
@@ -351,25 +365,66 @@ footer {
     margin-right: 0;
   }
   
-  h3{
-    margin-left: 40px;
+  h3 {
+    border: solid 3px rgb(197, 129, 33);
+    width: 150px;
+    text-align: center;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 40px 25% 0px 18%;
   }
   
-  
+  h4{
+    text-align: center;
+    margin: auto;
+  }
   
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .email-icon {
     margin-left: 57px;
   }
 
+  .skills-container {
+    background-color: rgb(197, 129, 33);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0px 18% 10px 18%;
+    padding: 10px 0px;
+    
+    
+  }
+
   h1 {
-    font-size: 140%;
+    font-size: 160%;
     height: 100%;
     line-height: 3;
   }
 
+  h3 {
+    border: solid 3px rgb(197, 129, 33);
+    width: 150px;
+    text-align: center;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 40px 25% 0px 18%;
+  }
+
+  h4{
+    text-align: center;
+    margin: auto;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 
